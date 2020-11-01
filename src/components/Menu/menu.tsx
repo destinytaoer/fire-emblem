@@ -51,7 +51,7 @@ const Menu: FC<MenuProps> & { Item: typeof MenuItem } = (props) => {
       const { displayName } = childElement.type;
 
       if (displayName === 'MenuItem') {
-        return child;
+        return React.cloneElement(childElement, { index });
       } else {
         console.error('Warning: Menu has a child which is not a MenuItem component');
       }

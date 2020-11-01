@@ -1,7 +1,6 @@
 import React from 'react';
 import { cleanup, fireEvent, render, RenderResult } from '@testing-library/react';
 import Menu, { MenuProps } from './menu';
-import MenuItem from './menuItem';
 
 const testProps: MenuProps = {
   defaultIndex: 0,
@@ -17,11 +16,9 @@ const testVerProps: MenuProps = {
 const generateMenu = (props: MenuProps) => {
   return (
     <Menu {...props}>
-      <Menu.Item index={0}>active</Menu.Item>
-      <Menu.Item index={1} disabled>
-        disabled
-      </Menu.Item>
-      <Menu.Item index={2}>index 2</Menu.Item>
+      <Menu.Item>active</Menu.Item>
+      <Menu.Item disabled>disabled</Menu.Item>
+      <Menu.Item>index 2</Menu.Item>
       <li></li>
     </Menu>
   );
