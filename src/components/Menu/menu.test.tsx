@@ -22,6 +22,7 @@ const generateMenu = (props: MenuProps) => {
         disabled
       </Menu.Item>
       <Menu.Item index={2}>index 2</Menu.Item>
+      <li></li>
     </Menu>
   );
 };

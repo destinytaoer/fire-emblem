@@ -31,4 +31,6 @@ const MenuItem: FC<MenuItemProps> = (props) => {
   );
 };
 
+MenuItem.displayName = 'MenuItem';
+
 export default MenuItem;
